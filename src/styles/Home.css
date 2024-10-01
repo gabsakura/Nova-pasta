@@ -1,0 +1,14 @@
+/* /styles/home.css */
+.home {
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+  
+  .home h1 {
+    color: var(--primary-color);
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,14 @@
+/* /styles/contact.css */
+.contact {
+    background-color: #fffbe6;
+    padding: 2rem;
+  }
+  
+  .contact h1 {
+    color: var(--primary-color);
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+  }
+  

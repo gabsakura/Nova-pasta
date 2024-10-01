@@ -1,0 +1,14 @@
+/* /styles/about.css */
+.about {
+    background-color: #e0e0e0;
+    padding: 2rem;
+  }
+  
+  .about h1 {
+    color: var(--secondary-color);
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+  }
+  
