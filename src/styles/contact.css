@@ -1,14 +1,53 @@
-/* /styles/contact.css */
-.contact {
-    background-color: #fffbe6;
-    padding: 2rem;
-  }
-  
-  .contact h1 {
-    color: var(--primary-color);
-  }
-  
-  .contact p {
-    font-size: 1.1rem;
-  }
-  
+/* Estilos para a página de contato futurista */
+
+.contact-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #EAEAEA;
+}
+
+.contact-title {
+  font-size: 3rem;
+  color: #00FF66;
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.7);
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 1.5rem;
+  color: #BEBEBE;
+  margin-bottom: 50px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons a img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.6), 0 0 25px rgba(0, 255, 102, 0.4);
+}
+
+/* Efeito neon ao passar o mouse */
+.social-icons a:hover img {
+  filter: brightness(1) hue-rotate(90deg);
+}

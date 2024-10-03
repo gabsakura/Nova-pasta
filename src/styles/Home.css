@@ -1,14 +1,110 @@
-/* /styles/home.css */
-.home {
-    background-color: #f9f9f9;
-    padding: 2rem;
-  }
-  
-  .home h1 {
-    color: var(--primary-color);
-  }
-  
-  .home p {
-    font-size: 1.2rem;
-  }
-  
+/* Estilos para a homepage slider */
+.parallax-slider {
+  width: 100vw; /* Ocupa toda a largura da tela */
+  max-width: 100vw; /* Certifica-se de que o slider ocupe 100% da viewport */
+  margin: 50px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Garante que nada ultrapasse a tela */
+}
+
+.parallax-slides-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Certifica-se de que o container ocupe toda a largura da viewport */
+  height: 400px; /* Mantém a altura fixa */
+  overflow: hidden; /* Esconde os slides que não estão ativos */
+  position: relative;
+}
+
+.parallax-slide {
+  width: 100vw; /* O slide agora ocupa 100% da largura da tela */
+  height: 100%; /* Mantém a altura dos slides */
+  background-color: #282828;
+  color: #EAEAEA;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+  position: absolute; /* Torna os slides sobrepostos uns aos outros */
+  top: 0;
+  left: 0;
+  opacity: 0; /* Todos os slides começam invisíveis */
+  visibility: hidden; /* Esconde os slides inativos */
+}
+
+.slide-image {
+  width: 100%;
+  height: 200px; /* Mantém a imagem ocupando metade da altura do slide */
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.parallax-content {
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.parallax-slide h3 {
+  font-size: 1.5rem;
+  color: #00FF66;
+  margin-bottom: 10px;
+}
+
+.parallax-slide p {
+  font-size: 1rem;
+  color: #BEBEBE;
+}
+
+/* Estilo para o slide visível */
+.parallax-slide.center {
+  opacity: 1; /* O slide ativo fica visível */
+  visibility: visible; /* Exibe o slide ativo */
+  transform: scale(1); /* Nenhuma transformação de escala */
+}
+
+/* Ajustes na navegação para que fique centralizada e dentro da viewport */
+.parallax-slider-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ocupa 100% da largura do slider */
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%);
+}
+
+.parallax-slider-navigation .prev, 
+.parallax-slider-navigation .next {
+  background-color: #00FF66;
+  color: #1B1B1B;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.parallax-slider-navigation .prev:hover, 
+.parallax-slider-navigation .next:hover {
+  background-color: #1BFFFF;
+}
+
+/* Limita a posição dos botões para que eles fiquem sempre dentro da tela */
+.parallax-slider-navigation .prev {
+  position: absolute;
+  left: 10px; /* Fica 10px à esquerda */
+}
+
+.parallax-slider-navigation .next {
+  position: absolute;
+  right: 10px; /* Fica 10px à direita */
+}

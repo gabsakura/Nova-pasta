@@ -1,0 +1,72 @@
+.services-section {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #1E1E1E;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 3rem; /* Tamanho maior para o título */
+  color: #00FF66; /* Cor futurista vibrante */
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px; /* Aumenta o espaçamento das letras para destacar */
+  position: relative;
+  display: inline-block;
+}
+
+.services-section h2::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #00FF66; /* Linha decorativa sob o título */
+  margin: 10px auto;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Serviços vão se organizar em várias linhas se necessário */
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px; /* Largura máxima da seção */
+  margin: 0 auto;
+}
+
+.service-card {
+  width: 220px;
+  height: 220px;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00FF66; /* Sombra verde neon ao passar o mouse */
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1BFFFF;
+}
+
+.service-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.service-card:hover h3 {
+  color: #00FF66; /* Título muda de cor ao passar o mouse */
+}

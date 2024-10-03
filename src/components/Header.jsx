@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles/header.css';
+import '../styles/header.css';
 
 const Header = () => {
   return (
@@ -12,6 +12,7 @@ const Header = () => {
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/about" className="nav-link">About</Link>
         <Link to="/contact" className="nav-link">Contact</Link>
+        <Link to="/services" className="nav-link">Services</Link> {/* Rota corrigida para /services */}
       </nav>
     </header>
   );
