@@ -1,49 +1,19 @@
-/* Estilo futurista e clean para o footer */
+/* Estilo simples e minimalista para o footer */
 .footer {
-  background: linear-gradient(135deg, #1E1E1E, #2B2B2B); /* Fundo escuro com gradiente sutil */
-  color: #fff;
-  padding: 20px;
+  background: linear-gradient(180deg, #2B2B2B 0%, #000000 100%); /* Gradiente de cinza escuro para preto */
+  color: #cccccc; /* Texto em cinza claro para contrastar com o fundo */
+  padding: 10px;
   text-align: center;
-  border-radius: 30px 30px 0 0; /* Bordas arredondadas na parte superior */
-  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Sombra leve para dar destaque */
-  position: fixed; /* Fixa o footer na parte inferior */
-  bottom: 0; /* Sempre na parte inferior da tela */
-  width: 100%; /* Ocupa a largura total da tela */
-  z-index: 100; /* Certifica-se de que ele fica acima de outros elementos */
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }
+
 
 .footer p {
-  font-size: 1rem;
-  margin: 0;
-  font-family: 'Orbitron', sans-serif; /* Fonte futurista */
-  letter-spacing: 1px;
-}
-
-.footer a {
-  color: #1BFFFF; /* Cor dos links */
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.footer a:hover {
-  color: #00FF66; /* Mudança de cor no hover */
-}
-
-.footer-icons {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Espaço entre os ícones */
-}
-
-.footer-icons i {
-  font-size: 1.5rem;
-  color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.footer-icons i:hover {
-  transform: scale(1.2); /* Efeito de animação ao passar o mouse */
-  color: #00FF66; /* Mudança de cor no hover */
+  margin: 0; /* Remove margens extras */
+  font-family: Arial, sans-serif; /* Fonte padrão e discreta */
+  font-size: 0.9rem;
 }
